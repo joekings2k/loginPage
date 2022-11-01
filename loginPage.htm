@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a55002a741.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginCred">
+        <h1>Welcome back,name</h1>
+        <h4>Welcome, Enter your details</h4>
+        <button class="btnGoogle">
+          <img
+            src="./images/google-logo.png"
+            class="imggoogle"
+            alt=""
+            height="25px"
+            width="25px"
+          />
+          <span class="textlogo"> Log in with google</span>
+        </button>
+        <h4>
+          <div class="orLine"></div>
+          <span class="innertext">or</span>
+          <div class="orLine"></div>
+        </h4>
+        <div class="emailform">
+          <input class="input1" id="input" type="text" placeholder="Email" />
+          <img
+            class="correctem"
+            src="https://img.icons8.com/office/16/000000/checked--v1.png"
+          />
+          <img
+            class="wrongem"
+            src="https://img.icons8.com/office/40/000000/cancel.png"
+          />
+        </div>
+        <div class="passwordform">
+          <input class="input2" id="input" type="password" placeholder="Password" />
+          <img
+            class="correctps"
+            src="https://img.icons8.com/office/16/000000/checked--v1.png"
+          />
+          <img
+            class="wrongps"
+            src="https://img.icons8.com/office/40/000000/cancel.png"
+          />
+        </div>
+
+        <div class="remeberform">
+          <form action="" class="formm">
+            <input type="checkbox" class="checkbox" />
+            <label for="checkbox" class="lblremeber">
+              <span class="innerlblremeber" for=""
+                >remeber for 30 days</span
+              ></label
+            >
+          </form>
+          <p class="forgot">Forgot Password</p>
+        </div>
+        <p class="check">CHECK YOUR DETAILS</p>
+        <div class="togglediv">
+          <input id="toggle" class="toggle-control" type="checkbox" />
+          <label for="toggle"> </label>
+          <span class="keepSigin">keep me sigined in </span>
+        </div>
+
+        <button class="loginBtn"><span class="logintxt">Log in</span></button>
+        <p>Dont have an account? <a href="" id="siginUP">Signup for free</a></p>
+      </div>
+      <div class="imgLog">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide slide1"
+              style="background-image: url(./images/frist.jpg)"
+            ></div>
+            <div
+              class="swiper-slide slide2"
+              style="background-image: url(./images/second.jpg)"
+            ></div>
+            <div
+              class="swiper-slide slide3"
+              style="background-image: url(./images/third.jpg)"
+            ></div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev arrow"></div>
+          <div class="swiper-button-next arrow"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modalheader">
+        <div class="loginMsg">Login Message</div>
+        <button class="closebtn">&times;</button>
+      </div>
+      <div class="modalbody">
+        <img src="./images/success.png" class="success" alt="">
+        <h2 id="modaltxt">Login successful</h2>
+      </div>
+    </div>
+    <div class="" id="overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
